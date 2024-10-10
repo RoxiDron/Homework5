@@ -12,6 +12,7 @@ public class Main {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
+
         //Задание 2
         int clientDeviceYear = 2015;
         if (clientOS == 0 && clientDeviceYear > 2015) {
