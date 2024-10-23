@@ -14,39 +14,39 @@ public class Main {
 
 
         //Задание 2
-        int clientDeviceYear = 2015;
-        if (clientOS == 0 && clientDeviceYear > 2015) {
+        int clientDeviceYear = 2028;
+        int clientOS1 = 0;
+        if (clientOS1 == 0 && clientDeviceYear > 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else if (clientOS == 0 && clientDeviceYear <= 2015) {
+        } else {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         }
-        if (clientOS == 1 && clientDeviceYear < 2015) {
+        if (clientOS1 == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        } else if (clientOS == 1 && clientDeviceYear >= 2015) {
+        } else {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
+
         //Задание 3
-        int year = 2024;
+        int year = 2028;
         if (year > 1584) {
             if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
                 System.out.println(year + " год является високосным");
             } else {
                 System.out.println(year + " год не является високосным");
             }
-        } else {
-            System.out.println("Год не может быть меньше 1585");
         }
 
         //Задание 4
         int deliveryDistance = 95;
         int days = 1;
         if (deliveryDistance < 20) {
-            System.out.println("Потребуется дней:" + days);
+            System.out.println("Потребуется дней: " + days);
         } else if (deliveryDistance >= 20 && deliveryDistance < 60) {
-            System.out.println("Потребуется дней:" + (days + 1));
+            System.out.println("Потребуется дней: " + (days + 1));
         } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
-            System.out.println("Потребуется дней:" + (days + 2));
+            System.out.println("Потребуется дней: " + (days + 2));
         } else {
             System.out.println("Доставки нет");
         }
@@ -55,22 +55,38 @@ public class Main {
         int monthNumber = 16;
         switch (monthNumber) {
             case 1:
+                System.out.println("Этот месяц зимний");
+                break;
             case 2:
+                System.out.println("Этот месяц зимний");
+                break;
             case 12:
                 System.out.println("Этот месяц зимний");
                 break;
             case 3:
+                System.out.println("Этот месяц весенний");
+                break;
             case 4:
+                System.out.println("Этот месяц весенний");
+                break;
             case 5:
                 System.out.println("Этот месяц весенний");
                 break;
             case 6:
+                System.out.println("Этот месяц летний");
+                break;
             case 7:
+                System.out.println("Этот месяц летний");
+                break;
             case 8:
                 System.out.println("Этот месяц летний");
                 break;
             case 9:
+                System.out.println("Этот месяц осенний");
+                break;
             case 10:
+                System.out.println("Этот месяц осенний");
+                break;
             case 11:
                 System.out.println("Этот месяц осенний");
                 break;
